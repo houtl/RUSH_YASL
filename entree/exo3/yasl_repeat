@@ -1,0 +1,9 @@
+#!../../ressources/yasl
+
+!!
+# 2 >= ? (
+(= 0 == ?
+("Usage yasl_repeat [nb] [arg] [arg] [...]\n" print # exit):
+(eval:1 # #(1:=:0 #(= print) ! "\n" print 1:1 1:+:1)))
+)
+: ("Usage yasl_repeat [nb] [arg] [arg] [...]\n" print # exit)

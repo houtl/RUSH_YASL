@@ -1,0 +1,53 @@
+#!../../ressources/yasl
+
+!!
+0:eval:1
+0:=:2 !
+0:eval:1
+
+"+":2
+2:%== ? (1:+:1 1:print "\n" print # exit)
+2:!
+
+"-":2
+2:%== ? (1:-:1 1:print "\n" print # exit)
+2:! 
+
+"*":2
+2:%== ? (1:*:1 1:print "\n" print # exit)
+2:! 
+
+"/":2
+2:%== ? (1:/:1 1:print "\n" print # exit)
+2:!
+
+"%":2
+2:%== ? (1:%:1 1:print "\n" print # exit)
+2:!
+
+">":2
+2:%== ? (1:>:1 1:print "\n" print # exit)
+2:!
+
+"<":2
+2:%== ? (1:<:1 1:print "\n" print # exit)
+2:!
+
+"!=":2
+2:%== ? (1:!=:1 1:print "\n" print # exit)
+2:!
+
+"<=":2
+2:%== ? (1:<=:1 1:print "\n" print # exit)
+2:!
+
+">=":2
+2:%== ? (1:>=:1 1:print "\n" print # exit)
+2:!
+
+"==":2
+2:%== ? (1:==:1 1:print "\n" print # exit)
+2:!
+
+"Usage : [nb] [operation] [nb]\n"
+print

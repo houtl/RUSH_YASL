@@ -1,0 +1,3 @@
+#!../../ressources/yasl
+!!
+read @(eval read)!

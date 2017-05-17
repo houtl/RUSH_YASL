@@ -1,0 +1,24 @@
+#!../../ressources/yasl
+
+!!
+{
+	"Usage yasl_fact [nb] (0 <= nv <= 20)\n"
+	print
+	#
+	exit
+} error
+
+{
+	2:=:3 0:2 2:<:2 1:2 2:== ? (error) : 3:=:2
+	2:=:3 2:2 2:<:2 1:2 2:== ? (1:0 print "\n" print # exit) : 3:=:2
+	2:=:3 20:2 2:>:2 1:2 2:== ? (error) : 3:=:2
+} check
+
+{
+	1:=:1
+	0:1
+	1:> ?(1:=:0 2:=:0 *:2 2:= 1:1 1:-:1 ft_recurs)
+} ft_recurs
+
+# 1 == ? (0:eval:2 check 2:=:1 1:1 1:-:1 ft_recurs print "\n" print # exit)
+error
